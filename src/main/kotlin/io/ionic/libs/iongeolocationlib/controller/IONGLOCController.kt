@@ -234,7 +234,8 @@ class IONGLOCController(
         altitudeAccuracy = if (IONGLOCBuildConfig.getAndroidSdkVersionCode() >= Build.VERSION_CODES.O) this.verticalAccuracyMeters else null,
         heading = this.bearing,
         speed = this.speed,
-        timestamp = this.time
+        timestamp = this.time,
+        isMock = if (IONGLOCBuildConfig.getAndroidSdkVersionCode() >= Build.VERSION_CODES.S) this.isMock() else this.isFromMockProvider(),
     )
 
     companion object {

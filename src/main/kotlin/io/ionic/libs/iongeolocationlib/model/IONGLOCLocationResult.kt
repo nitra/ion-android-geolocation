@@ -11,5 +11,6 @@ data class IONGLOCLocationResult(
     val altitudeAccuracy: Float? = null,
     val heading: Float,
     val speed: Float,
-    val timestamp: Long
+    val timestamp: Long,
+    val isMock: Boolean
 )
