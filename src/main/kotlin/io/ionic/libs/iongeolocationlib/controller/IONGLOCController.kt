@@ -236,6 +236,7 @@ class IONGLOCController(
         speed = this.speed,
         timestamp = this.time,
         isMock = if (IONGLOCBuildConfig.getAndroidSdkVersionCode() >= Build.VERSION_CODES.S) this.isMock() else this.isFromMockProvider(),
+        provider = this.provider
     )
 
     companion object {
