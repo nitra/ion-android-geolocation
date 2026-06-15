@@ -13,5 +13,9 @@ data class IONGLOCLocationResult(
     val speed: Float,
     val timestamp: Long,
     val isMock: Boolean,
-    val provider: String? = null
+    val provider: String? = null,
+    val magneticHeading: Float? = null,
+    val trueHeading: Float? = null,
+    val headingAccuracy: Float? = null,
+    val course: Float? = null
 )
