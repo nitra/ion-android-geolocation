@@ -73,7 +73,12 @@ internal fun Location.toOSLocationResult(
         magneticHeading = magneticHeading,
         trueHeading = trueHeading,
         headingAccuracy = headingAccuracy,
-        course = course
+        course = course,
+        isMock = if (IONGLOCBuildConfig.getAndroidSdkVersionCode() >= Build.VERSION_CODES.S)
+            this.isMock
+        else
+            @Suppress("DEPRECATION") this.isFromMockProvider,
+        provider = this.provider
     )
 }
 
