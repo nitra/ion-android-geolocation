@@ -1,0 +1,19 @@
+src/main/kotlin/io/ionic/libs/iongeolocationlib/controller/helper/IONGLOCExtensions.kt
+  s_305eeeb9f6a6d5::t_e4fb6bff6ace56 76-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "66051657d30c50ea58edc1d165eaf89765818ed0",
+  "prompts": {},
+  "sessions": {
+    "s_305eeeb9f6a6d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe66bc0c-8611-4a00-9779-65f16401e7ed",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yurii <brechkoio@gmail.com>"
+    }
+  }
+}
